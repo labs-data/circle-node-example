@@ -1,5 +1,14 @@
 {
-  "scripts" {
+  "scripts": {
     "test": "jest"
+  },
+  "name": "circle-node-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.0.2"
   }
 }

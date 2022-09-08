@@ -1,2 +1,1 @@
-# circle-node-example
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/labs-data/circle-node-example/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/labs-data/circle-node-example/tree/main)
+# circle-node-example [![CircleCI](https://dl.circleci.com/status-badge/img/gh/labs-data/circleci-node-example/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/labs-data/circleci-node-example/tree/main)

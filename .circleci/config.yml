@@ -5,19 +5,22 @@ orbs:
   node: circleci/node@4.7.0
 
 jobs:
-  upload-cov:
+  setup:
     machine:
-      image: ubuntu-2004:202010-01
+      image: ubuntu-2004
     environment:
-      COVERAGE_PATH: "./tmp/cov"
+      COVERAGE_DIR: "./tmp/cov"
     steps:
-      - codecov/upload
+      - checkout
+      - run: mkdir -p $COVERAGE_DIR
 
 workflows:
   sample:
     jobs:
+      - setup
       - node/test:
           version: '16.10'
           pkg-manager: npm
-      - upload-cov
+          post-steps:
+            - codecov/upload
             

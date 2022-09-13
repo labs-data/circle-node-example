@@ -6,8 +6,8 @@ orbs:
 
 jobs:
   upload-cov:
-    docker:
-      - image: 'cimg/base:stable'
+    machine:
+      image: ubuntu-2004:202010-01
     environment:
       COVERAGE_PATH: "./tmp/cov"
     steps:

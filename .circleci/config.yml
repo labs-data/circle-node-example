@@ -6,8 +6,7 @@ orbs:
 
 jobs:
   setup:
-    machine:
-      image: ubuntu-2004:current
+    machine: true
     resource_class: large
     environment:
       COVERAGE_DIR: "./tmp/cov"

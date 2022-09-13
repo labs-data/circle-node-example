@@ -6,7 +6,8 @@ orbs:
 
 jobs:
   upload-cov:
-    executor: node/default
+    docker:
+      - image: 'cimg/base:stable'
     environment:
       COVERAGE_PATH: "./tmp/cov"
     steps:
